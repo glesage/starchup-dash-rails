@@ -15,7 +15,7 @@ FROM ubuntu:12.04
 MAINTAINER Geoffroy Lesage <gefthefrench@gmail.com>
  
 # NodeJS (Assets pipeline)
-RUN echo deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu precise main > /etc/apt/sources.list.d/nodejs.list
+RUN echo deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu/precise/main > /etc/apt/sources.list.d/nodejs.list
  
 # Dependencies
 RUN apt-get update
