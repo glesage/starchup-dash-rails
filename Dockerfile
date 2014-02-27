@@ -15,9 +15,9 @@ FROM ubuntu:12.04
 MAINTAINER Geoffroy Lesage <gefthefrench@gmail.com>
  
 # NodeJS (Assets pipeline)
-sudo apt-get update
-sudo apt-get install -y python-software-properties python g++ make
-sudo add-apt-repository ppa:chris-lea/node.js
+RUN apt-get update
+RUN apt-get install -y python-software-properties python g++ make
+RUN add-apt-repository ppa:chris-lea/node.js
  
 # Dependencies
 RUN apt-get update
