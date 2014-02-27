@@ -15,7 +15,9 @@ FROM ubuntu:12.04
 MAINTAINER Geoffroy Lesage <gefthefrench@gmail.com>
  
 # NodeJS (Assets pipeline)
-RUN echo deb http://ppa.launchpad.net/chris-lea/node.js/ubuntu/precise/main > /etc/apt/sources.list.d/nodejs.list
+sudo apt-get update
+sudo apt-get install -y python-software-properties python g++ make
+sudo add-apt-repository ppa:chris-lea/node.js
  
 # Dependencies
 RUN apt-get update
